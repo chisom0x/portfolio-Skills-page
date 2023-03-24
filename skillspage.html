@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skills</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+             background-color: pink;
+       }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            max-width: 1200px;
+            padding: 0 20px;
+          
+        }
+
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: center;
+            flex: 1 1 200px;
+            max-width: 300px;
+            height: 100px;
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .skill h3 {
+            margin: 0;
+            padding: 0;
+            font-size: 24px;
+            color: #333;
+            text-align: left;
+            flex: 1;
+        }
+
+        .progress-bar {
+            height: 10px;
+            background-color: #007bff;
+            width: 0;
+            transition: width 0.5s ease-in-out;
+            padding: 5px 0;
+            box-sizing: border-box;
+            margin-top: 10px;
+            margin-bottom: 15px;
+            flex: 1;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .skill {
+                flex: 0 0 auto;
+                max-width: none;
+                margin: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 769px) and (max-width: 991px) {
+            .skill {
+                flex: 1 1 25%;
+                max-width: 25%;
+            }
+        }
+
+        @media only screen and (min-width: 992px) {
+            .skill {
+                flex: 1 1 20%;
+                max-width: 20%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="progress-bar" style="width: 100%;"></div>
+        </div>
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Java</h3>
+            <div class="progress-bar" style="width: 30%;"></div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="progress-bar" style="width: 80%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Ruby</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar" style="width: 50%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar" style="width: 70%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar" style="width: 20%;"></div>
+        </div>
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="progress-bar" style="width: 90%;"></div>
+        </div>
+        <!-- add more skills here -->
+    </div>
+</body>
+</html>
